@@ -1,0 +1,56 @@
+/*****   Estilo de la pagina funcionesMozo ************/
+body{
+    background-image: url(../img/mozo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.funcionesMozo h2, .funcionesMozo h3{
+    color: white;
+}
+
+.funcionesMozo h2{
+    font-size: 45px;
+}
+
+.funcionesMozo h3{
+    font-size: 30px;
+}
+.funcionesMozo{
+    text-align: center;
+    margin-left: auto;
+    margin-top: 8%;
+  }
+
+  .funcionesMozo li{
+    border: black solid 2px;
+    padding: 12px;
+    margin: 10px;
+    width: 20%;
+    list-style: none;
+    margin-left: 37.5%;
+    background-color: #AB992A;
+  }
+
+  .funcionesMozo li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+
+  .funcionesMozo li:hover{
+    background-color: #928533;
+  }
+
+  p a{
+    margin-left: 80%;
+    color:white;
+    font-size: 20px;
+  }
+
+  p a:hover{
+    color:#AB992A;
+    font-size: 23px;
+  }
+
+  /******************************************************/
+  /******************************************************/

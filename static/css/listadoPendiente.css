@@ -1,0 +1,58 @@
+body{
+    background-image: url(../img/fondo.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+.pendiente{
+  display: inline-block;
+  border: 2px solid #CCC;
+  margin: 10px;
+  background-color: rgba(236, 214, 14, 0.541);
+  max-width: 20%;
+}
+
+.pendiente table{
+  border-collapse: separate;
+  border-spacing: 10px 8px;
+  margin-top: none;
+}
+
+.pendiente table td, .pendiente table th {
+  font-size:17px;
+}
+
+.pendiente table td a{
+  text-decoration: none;
+  color: black;
+}
+
+.pendiente table td a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+h2{
+  text-align: center;
+  color:white;
+  font-size: 25px;
+}
+
+.pendiente h2{
+  text-align: center;
+  text-decoration: underline;
+  color: white;
+  font-size: 22px;
+}
+
+p a{
+  margin-left: 80%;
+  color:white;
+  font-size: 20px;
+  text-align: center;
+}
+
+p a:hover{
+  color:#AB992A;
+  font-size: 23px;
+}

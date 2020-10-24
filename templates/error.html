@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Error</title>
+    <link rel="stylesheet" href= " {{ url_for('static', filename ='css/error.css') }}">
+  </head>
+  <body>
+    <h2>{{mensaje}}</h2>
+    <a href="{{url_for(url)}}"> Volver</a>
+  </body>
+</html>

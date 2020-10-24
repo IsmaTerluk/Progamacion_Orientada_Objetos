@@ -1,0 +1,128 @@
+/************************************************************/
+/************************************************************/
+/******   Estilos sobre la carta del Restaurant   ***********/
+body{
+  background-image: url(../img/mozo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.carta{
+  display: inline-block;
+  border: 2px solid #CCC;
+  position: absolute;
+  margin-left: 5.5%;
+  margin-top: 5.5%;
+}
+
+.carta h2{
+  text-align: center;
+  font-size: 25px;
+  text-decoration: underline;
+  color:white;
+}
+
+.carta table{
+  margin-left: 1%;
+  border-collapse: separate;
+  border-spacing: 20px 8px;
+}
+
+.carta table th{
+  background-color: #6E6424;
+  font-size: 23px;
+}
+
+.carta table td a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.carta table td a:hover{
+  color: #696317;
+}
+
+.carta .precio{
+  text-align: center;
+  font-size: 20px;
+}
+
+.carta table td{
+  width: 40%;
+  color: white;
+}
+/************************************************************/
+/************************************************************/
+/******   Estilos sobre el pedido que se realiza  ***********/
+
+.pedido{
+  display: inline-block;
+  margin-left: 45%;
+  margin-top: 5.5%;
+  width: 26%;
+}
+.pedido table{
+  margin-left: 1%;
+  border-collapse: separate;
+  border-spacing: 20px 8px;
+}
+
+.pedido table td{
+  width: 500px;
+  color: white;
+  font-size: 19px;
+}
+
+.pedido .xprecio{
+  text-align: right;
+}
+
+.pedido h2{
+  text-align: center;
+  text-decoration: underline;
+  color:white;
+  padding: 4px;
+}
+
+
+.pedido h4{
+  text-align: center;
+  background-color: #696317 ;
+  border: 1px solid white;
+  font-size: 18px;
+}
+
+
+/************************************************************/
+/************************************************************/
+/******   Estilos sobre la observacion  ***********/
+
+.observacion{
+  display: inline-block;
+  margin-left: 45%;
+  width: 26%;
+}
+
+.observacion form textarea{
+  width: 99%;
+  height: 15%;
+  resize: none;
+}
+
+.observacion form input[type='submit']{
+  width: 40%;
+  margin-left: 34%;
+  background-color: #6E6424;
+  color: #FFF;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.observacion form input[type='submit']:hover{
+  background-color: #928533;
+}
+
+
+/************************************************************/
+/************************************************************/

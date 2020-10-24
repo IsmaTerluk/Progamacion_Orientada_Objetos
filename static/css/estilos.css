@@ -1,0 +1,52 @@
+/*********************************************/
+/******* Estilos de la pagina de incioAcceso ******/
+body{
+  background-image: url(../img/fondoInicio.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.acceso{
+  margin-top: 10%;
+}
+
+.acceso h1{
+  margin-left: 26%;
+  color: #FFF;
+}
+
+.acceso form{
+  width: 30%;
+  /*border: 2px solid #CCC;
+  background-color: #EDFDEE;*/
+  margin-left: 20%;
+  padding: 20px;
+  padding-top: 30px;
+}
+
+.acceso label{
+  color: white;
+}
+
+.acceso input{
+  width: 98%;
+  margin-bottom: 20px;
+  margin-top: 4px;
+  padding: 5px;
+  border: 1px solid #CCC;
+}
+
+.acceso input[type='submit']{
+  width: 50%;
+  margin-left: 24%;
+  background-color: #6E6424;
+  color: #FFF;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.acceso input[type='submit']:hover{
+  background-color: #928533;
+}
+/*******************************************************/
+/******************************************************/

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Numero Mesa</title>
+    <link rel="stylesheet" href=" {{ url_for('static', filename ='css/numeroMesa.css') }}">
+  </head>
+  <body>
+
+    <div class="mesa">
+      <form class="" action="{{url_for('crearPedido')}}" method="post">
+        <label for="mesa"><b> Número de mesa</b></label>
+        <input type="text" name="mesa" />
+        <input type="submit"  value="Ok">
+      </form>
+    </div>
+
+  </body>
+</html>

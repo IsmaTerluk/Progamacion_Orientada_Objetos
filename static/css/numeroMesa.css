@@ -1,0 +1,31 @@
+body{
+  background-image: url(../img/mozo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.mesa{
+  margin-left: 27%;
+  margin-top: 23%;
+}
+
+.mesa input[type='submit']{
+  width: 7%;
+  background-color: #6E6424;
+  color: #FFF;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.mesa label{
+  font-size: 150%;
+  color: white;
+  padding-right: 10px;
+}
+
+.mesa input[type='text']{
+  width: 20%;
+  padding: 3px;
+  padding-right: 10px;
+}

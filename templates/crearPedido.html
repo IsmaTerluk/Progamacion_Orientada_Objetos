@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet"  href= " {{ url_for('static', filename ='css/crearPedido.css') }}">
+    <title>Crear Pedido</title>
+  </head>
+
+  <body>
+
+    <div class="carta">
+      <h2>Carta</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for producto in productos %}
+              <tr>
+                <td> <a href="{{ url_for('crearPedido',precio=producto.PrecioUnitario,numProducto=producto.NumProducto) }}">{{producto.Nombre}}</a> </td>
+                <td class='precio'> ${{producto.PrecioUnitario}} </td>
+              </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <div class="pedido">
+      {% if band !=0 %}
+        <h2>Pedido</h2>
+        {%for item in pedido.items_pedido%}
+          <table>
+            <tr>
+              <td>-- {{item.Producto.Nombre}} </td>
+              <td class='xprecio'>${{item.Precio}}</td>
+            </tr>
+          </table>
+        {%endfor%}
+        <h4><b>Total -- ${{Total}}</b></h4>
+      {%endif%}
+    </div>
+    <div class="observacion">
+      {% if band != 0 %}
+        <form class="" action="{{ url_for('pedidoCargado') }}" method="post">
+          <textarea name="observacion" placeholder="Observaciones"></textarea><br><br>
+          <input type="submit"  value="Enviar">
+        </form>
+      {%endif%}
+    </div>
+  </body>
+</html>

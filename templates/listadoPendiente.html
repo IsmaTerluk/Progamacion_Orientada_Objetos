@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href= "{{ url_for('static', filename ='css/listadoPendiente.css') }}">
+    <title></title>
+  </head>
+  <body>
+    <h2>Listado de pedidos pendientes</h2>
+    {% if xlong!=0 %}
+      {% for pedido in li_pedidos %}
+        <div class='pendiente'>
+          <h2>Pedido {{pedido.NumPedido}}</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for item in pedido.items_pedido %}
+                <tr>
+                  <td>{{item.Producto.Nombre }}</td>
+                  <td><a href="{{ url_for('marcarPedido', item=item.NumItem, num_pedido=item.NumPedido)}}">{{ item.Estado }}</a></td>
+                </tr>
+              {%endfor%}
+            </tbody>
+          </table>
+          {% if pedido.Observacion !='' %}
+            <h4>Observacion: {{pedido.Observacion}} </h4>
+          {% endif%}
+        </div>
+      {% endfor %}
+    {% else %}
+      <h2>Sin nada que preparar</h2>
+    {% endif %}
+    <p><a href="{{url_for('Inicio')}}">Cerrar Sesión</a></p>
+  </body>
+</html>

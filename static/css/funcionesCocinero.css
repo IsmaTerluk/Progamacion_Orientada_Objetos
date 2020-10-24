@@ -1,0 +1,43 @@
+body{
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h3{
+  display:inline-block;
+  border: black solid 2px;
+  text-align: center;
+  background-color: #AB992A;
+  width: 18%;
+  padding: 5px;
+  margin-left: 40%;
+  margin-top: 4%;
+}
+
+h3:hover{
+  border: black solid 2px;
+  background-color: #928533;
+}
+
+h3 a{
+  text-decoration: none;
+  color:black;
+}
+
+h2{
+  text-align: center;
+  color:white;
+  font-size: 45px;
+}
+
+p a{
+  margin-left: 80%;
+  color:white;
+  font-size: 15px;
+}
+
+p a:hover{
+  color:#AB992A;
+  font-size: 12px;
+}
