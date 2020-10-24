@@ -1,0 +1,21 @@
+from ClasePersona import Persona
+from ClaseLista import Lista
+if __name__ == '__main__':
+    lista=Lista()
+    persona1=Persona('Ismael',21)
+    persona2=Persona('Juan',28)
+    persona3=Persona('Cluadio',22)
+    persona4=Persona('Joaquin',30)
+    lista.insertarVehiculoPorCola(persona1)
+    lista.insertarVehiculoPorCola(persona2)
+    lista.insertarVehiculoAlFinal(persona3)
+    pos=int(input("Posicion en la que desea insetar el vehiculo: "))
+    lista.insertarVehiculoAdentro(persona4,pos)
+    pos=int(input("Posicion en la que desea insetar el vehiculo: "))
+    lista.encontrarObjeto(pos-1)
+    lista.listarDatosProfesores()
+    lista.eliminarPorEdad(22)
+    print("Eliminado\n")
+    lista.listarDatosProfesores()
+    print("s+++++++++++\n")
+    lista.prueba()
